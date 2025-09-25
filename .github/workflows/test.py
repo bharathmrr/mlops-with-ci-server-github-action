@@ -39,4 +39,11 @@ def test_fifth():
 def test_invalid_input():
     with pytest.raises(TypeError):
         square('string')
-        
+    with pytest.raises(TypeError):
+        cube('string')
+    with pytest.raises(TypeError):
+        fifth('string')
+    with pytest.raises(TypeError):
+        square([1, 2, 3])
+    with pytest.raises(TypeError):
+        cube(None)
